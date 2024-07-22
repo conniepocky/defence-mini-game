@@ -34,7 +34,13 @@ public class EnemyMovement : MonoBehaviour
     {
         if (collision.gameObject.tag == "computer")
         {
-            Debug.Log("Computer Hacked");
+            Manager.health -= 10;
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other) {
+        if (other.gameObject.tag == "bullet") {
             Destroy(gameObject);
         }
     }

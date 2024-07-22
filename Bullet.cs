@@ -6,7 +6,7 @@ public class Bullet : MonoBehaviour
 {
 
     void Update() {
-        transform.Translate(Vector2.up * Time.deltaTime * 50);
+        transform.Translate(Vector2.up * Time.deltaTime * 100);
     
     }
     private void OnCollisionEnter2D(Collision2D collision)

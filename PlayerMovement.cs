@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector2(horizontal, vertical) * 50;
+        rb.velocity = new Vector2(horizontal, vertical) * 100;
 
         if (Input.GetMouseButtonDown(0))
         {
